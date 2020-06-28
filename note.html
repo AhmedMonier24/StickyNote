@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Note</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!----------------------Nav Bar------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark text-white bg-green">
+      <div class="container">
+        <i class="fas fa-sticky-note fa-2x mr-md-4"></i>
+        <a class="navbar-brand" href="index.html">Sticky Note</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="help.html">Help</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Users
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Log In</a>
+                <a class="dropdown-item" href="signup.html">Sign Up</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!----------------------Notes------------------------------->
+    <section class="bg-dark">
+      <div class="container ">
+        <div class="row py-5">
+          <div class="col-md-6">
+            <h1 class="text-white">Your Notes</h1>
+            <div class="">
+              <form class="form-inline ">
+                <div class="input-group w-100 ">
+                  <input type="text" class="form-control " placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text " id="basic-addon1"><i class="fa fa-search"></i></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+        <div class="offset-2"></div>
+        <div class="col-md-4">
+          <p><button class="text-white btn btn-danger w-100" data-toggle="modal" data-target="#addModal"><i class="text-white fas fa-plus-circle fa-2x"></i><span class="text-white text-2 px-4">Add Note</button></span></p>
+          <p><button  class="text-white btn btn-info w-100" data-toggle="modal" data-target="#removeModal"><i class="text-white fas fa-trash fa-2x"></i><span class="text-white text-2 px-4">Remove All</button></span></p>
+
+        </div>
+        <hr class="bg-white">
+      </div>
+          <!----------------------displayNotes------------------------------->
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mb-5 ">
+          <div class="sticky bg-danger p-4 text-white rounded">
+            <div class="dropdown">
+              <a class="text-white float-right " href=""  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars float-right fa-2x"></i></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit">Edit<i class="fa fa-edit float-right"></i> </a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteNote">Delete<i class="fas fa-trash float-right"></i> </a>
+              </div>
+            </div>
+            <h2 class="py-3 mt-3">Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequatur iusto fugiat explicabo ex, accusantium quaerat blanditiis? Ab sequi quaerat perspiciatis neque blanditiis ea officia!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!----------------------[Footer]!------------------------------->
+<section class="bg-green text-white">
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-3">
+        <i class="fas fa-sticky-note fa-2x mr-md-4"></i>
+        <h2 class="d-inline">Sticky Note</h2>
+        <hr class="bg-white">
+        <p class="text-justify">Welcome To The Sticky Note Official Website.
+
+          Through The Easily Accessible Menu You Can Quickly Customize, Edit, Share, Read, Search, Manage, Duplicate, And Print Your Notes.
+          
+          
+          </p>
+      </div>
+      <div class="offset-1"></div>
+      <div class="col-md-3">
+        <h2>Quick Links</h2>
+        <hr class="bg-white">
+        <p class="text-2">
+        <a href="index.html" class="text-white">Home</a>
+        </p>
+        <p class="text-2">
+          <a href="contact.html" class="text-white">Contact</a>
+        </p>
+        <p class="text-2">
+          <a href="help.html" class="text-white">Help</a>
+        </p>
+      </div>
+      <div class="offset-1"></div>
+      <div class="col-md-3">
+        <h2>Contact Us</h2>
+        <hr class="bg-white">
+        <p class="text-2">
+          <i class="fab fa-whatsapp"></i>
+        <a href="index.html" class="text-white">+2 0100 850 1824</a>
+        </p>
+        <p class="text-2">
+          <i class="fa fa-envelope"></i>
+        <a href="index.html" class="text-white">amonier@bk.ru</a>
+        </p>
+          <span><a href="https://www.facebook.com/AhmedMonier24" target="_blank"><i class="text-white fab fa-facebook-square fa-2x"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/ahmedmonier24/" target="_blank"><i class="text-white fab fa-linkedin fa-2x"></i></a></span>
+          <span><a href="https://www.behance.net/romeladv/" target="_blank"><i class="text-white fab fa-behance-square fa-2x"></i></a></span>
+          <span><a href="https://twitter.com/AhmedMonier24" target="_blank"><i class="text-white fab fa-twitter-square fa-2x"></i></a></span>
+          <span><a href="https://twitter.com/AhmedMonier24" target="_blank"><i class="text-white fab fa-instagram-square fa-2x"></i></a></span>
+
+
+        </div>
+      <div class="offset-1"></div>
+      </div>
+    </div>
+    <div class="col-12 copyright text-dark text-center">
+      <span>Copyright © 2020 - 2021 All rights reserved Ahmed Monier.</span>
+    </div>
+
+</section>
+    <!----------------------Script Link------------------------------->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<!-- -------------------------------=====================------------------Modals -->
+<!-- Modal Add Note-->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="title">Title</label>
+        <input id="goooooo" class="form-control" type="text">
+        <label for="">Description</label>
+        <textarea id="addTitleDesc" class="form-control" type="text"></textarea>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button  onclick="createNote()" id="btnAddNote" type="button" class="btn btn-primary">Add Note</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal remove all Note-->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are You sure to Delete All Note ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button id="btnDeleteAll" type="button" class="btn btn-primary">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal  Edit Note-->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="">Title</label>
+        <input id="editTitleName" class="form-control" type="text">
+        <label for="">Description</label>
+        <textarea id="addTitleDesc" class="form-control" type="text"></textarea>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="btnSaveNote" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal delet note Note-->
+<div class="modal fade" id="deleteNote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are You sure to Delete This Note ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button id="btnDeleteAll" type="button" class="btn btn-primary">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
