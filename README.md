@@ -1,7 +1,8 @@
 # StickyNote
+<img src="http://www.mediafire.com/convkey/8c05/3lf0q4toa0xcgzzzg.jpg">
 <h1>hello Evrey One....<br>
 thanks for watching :D <br>
-it for free :D <br>
+it;s for free :D <br>
 Live Demo <br>
 https://ahmedmonieri.github.io/StickyNote/index.html <br>
 panel of Notes <br>
